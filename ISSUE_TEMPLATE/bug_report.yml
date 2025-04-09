@@ -1,0 +1,61 @@
+name: Bug Report
+description: Report a bug that needs fixing
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug!
+  - type: input
+    id: clickup
+    attributes:
+      label: ClickUp Task ID
+      description: The ClickUp task ID if one exists (format CU-XXXXX)
+      placeholder: CU-XXXXX
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear description of the bug
+      placeholder: Describe what happened...
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce this issue?
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+      placeholder: Describe what should have happened...
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain your problem
+      placeholder: Paste any relevant screenshots here
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      description: Where did this issue occur?
+      options:
+        - Production
+        - Staging
+        - Development
+        - Testing
+    validations:
+      required: true

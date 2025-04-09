@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Create ClickUp Task
+    url: https://app.clickup.com/
+    about: For new features or bugs, please create a ClickUp task first
+  - name: Engineering Documentation
+    url: https://your-docs-link-here
+    about: Check our documentation for guidance on common issues
